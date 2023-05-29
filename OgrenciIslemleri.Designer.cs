@@ -56,7 +56,7 @@
             button1.Name = "button1";
             button1.Size = new Size(130, 23);
             button1.TabIndex = 2;
-            button1.Text = "button1";
+            button1.Text = "EKLE";
             button1.UseVisualStyleBackColor = true;
             // 
             // listBox1
@@ -70,6 +70,7 @@
             // 
             // cmbDersler
             // 
+            cmbDersler.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbDersler.FormattingEnabled = true;
             cmbDersler.Location = new Point(78, 158);
             cmbDersler.Name = "cmbDersler";
@@ -78,6 +79,7 @@
             // 
             // cmbDonemler
             // 
+            cmbDonemler.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbDonemler.FormattingEnabled = true;
             cmbDonemler.Location = new Point(76, 211);
             cmbDonemler.Name = "cmbDonemler";

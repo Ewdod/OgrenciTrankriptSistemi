@@ -27,7 +27,9 @@ namespace OgrenciTrankriptSistemi
             {
                 cmbDersler.Items.Add(item.DersAdi);
             }
-            
+
+            cmbDonemler.Items.AddRange(_ov.DonemVeri.ToArray());
+
         }
     }
 }

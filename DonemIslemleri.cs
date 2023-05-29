@@ -13,15 +13,29 @@ namespace OgrenciTrankriptSistemi
 {
     public partial class DonemIslemleri : Form
     {
-        public DonemIslemleri()
+        OkulVeri _ov;
+        public DonemIslemleri(OkulVeri ov)
         {
+            _ov = ov;
             InitializeComponent();
+            Listele();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Listele()
         {
-            Donem d1 = new Donem(Convert.ToInt32(textBox1.Text));
-            d1.Ekleme();
+            lstDonemler.Items.AddRange(_ov.DonemVeri.ToArray());
         }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            // var donem = new Donem(Convert.ToInt32(txtKacinciDonem.Text));
+            lstDonemler.Items.Clear();
+            Donem d1 = new Donem(Convert.ToInt32(txtKacinciDonem.Text));
+            _ov.DonemVeri.Add(d1);
+            Listele();
+            
+        }
+
+
     }
 }

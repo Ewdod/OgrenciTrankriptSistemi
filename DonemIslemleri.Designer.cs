@@ -28,45 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            listBox1 = new ListBox();
-            button1 = new Button();
+            txtKacinciDonem = new TextBox();
+            lstDonemler = new ListBox();
+            btnEkle = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // txtKacinciDonem
             // 
-            textBox1.Location = new Point(90, 57);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(160, 23);
-            textBox1.TabIndex = 0;
+            txtKacinciDonem.Location = new Point(90, 57);
+            txtKacinciDonem.Name = "txtKacinciDonem";
+            txtKacinciDonem.Size = new Size(160, 23);
+            txtKacinciDonem.TabIndex = 0;
             // 
-            // listBox1
+            // lstDonemler
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(380, 57);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(324, 229);
-            listBox1.TabIndex = 1;
+            lstDonemler.FormattingEnabled = true;
+            lstDonemler.ItemHeight = 15;
+            lstDonemler.Location = new Point(380, 57);
+            lstDonemler.Name = "lstDonemler";
+            lstDonemler.Size = new Size(324, 229);
+            lstDonemler.TabIndex = 1;
             // 
-            // button1
+            // btnEkle
             // 
-            button1.Location = new Point(90, 142);
-            button1.Name = "button1";
-            button1.Size = new Size(160, 23);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnEkle.Location = new Point(90, 142);
+            btnEkle.Name = "btnEkle";
+            btnEkle.Size = new Size(160, 23);
+            btnEkle.TabIndex = 2;
+            btnEkle.Text = "EKLE";
+            btnEkle.UseVisualStyleBackColor = true;
+            btnEkle.Click += btnEkle_Click;
             // 
             // DonemIslemleri
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(listBox1);
-            Controls.Add(textBox1);
+            Controls.Add(btnEkle);
+            Controls.Add(lstDonemler);
+            Controls.Add(txtKacinciDonem);
             Name = "DonemIslemleri";
             Text = "DonemIslemleri";
             ResumeLayout(false);
@@ -75,8 +75,8 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private ListBox listBox1;
-        private Button button1;
+        private TextBox txtKacinciDonem;
+        private ListBox lstDonemler;
+        private Button btnEkle;
     }
 }
