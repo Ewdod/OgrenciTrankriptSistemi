@@ -22,7 +22,7 @@ namespace OgrenciTrankriptSistemi
 
         private void btnDonemIslemleri_Click(object sender, EventArgs e)
         {
-            
+            // degisiklik denemesi
         }
     }
 }
